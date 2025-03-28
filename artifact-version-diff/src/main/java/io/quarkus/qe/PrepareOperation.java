@@ -57,6 +57,7 @@ public class PrepareOperation {
     public static void executeProcess(List<String> command, String errorMsg, Path path) {
         ProcessBuilder builder = new ProcessBuilder(command);
         builder.directory(path.toFile());
+        builder.environment().put("MAVEN_OPTS", "-Xmx512m");
         try {
             Process process = builder.redirectErrorStream(true)
                     .directory(path.toFile())
