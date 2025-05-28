@@ -10,7 +10,7 @@ allowed-artifacts-version-comparison:
     allowed-rhbq-versions:
       - 3.7.1
   - artifact:
-      org.apache.kafka:kafka
+      org.apache.kafka:kafka*
     allowed-rhbq-versions:
       - 3.7.1.redhat-00001
 allowed-missing-artifacts-bom-comparison:
